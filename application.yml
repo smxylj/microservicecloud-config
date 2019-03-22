@@ -1,18 +1,17 @@
 spring:
-  profiles: #  请保存为UTF-8格式
+  profiles:
     active:
-        - dev
-# 分隔符，使得不同环境的配置在同一个文件中
+    - dev
 ---
-#dev指开发环境
-spring:
-  profiles: dev
+spring: 
+  profiles: dev     
   application: 
     name: microservicecloud-config-atguigu-dev
 ---
-#test指测试环境
-spring:
-  profiles: test   
+spring: 
   application: 
     name: microservicecloud-config-atguigu-test
 #请保存为UTF-8格式
+#dev指开发环境
+#test指测试环境
+# 分隔符，使得不同环境的配置在同一个文件中
